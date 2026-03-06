@@ -4,7 +4,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #1e1e1f 0%, #222224 100%);
+    background: linear-gradient(135deg, #5f86ce 0%, #c452db 100%);
     min-height: 100vh;
 }
 
@@ -70,7 +70,7 @@ body {
 
 .header-main p {
     font-size: 1.3em;
-    color: rgba(255,255,255,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -85,7 +85,7 @@ section {
 }
 
 h2 {
-    color: #fff;
+    color: #000000;
     font-size: 2.5em;
     margin-bottom: 30px;
     text-align: center;
@@ -93,7 +93,7 @@ h2 {
 }
 
 .concepto, .ley, .formula {
-    background: rgba(255,255,255,0.95);
+    background: rgba(211, 189, 207, 0.95);
     padding: 35px;
     margin: 25px 0;
     border-radius: 25px;
@@ -101,7 +101,7 @@ h2 {
 }
 
 h3 {
-    color: #667eea;
+    color: #0a33e9;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -129,7 +129,7 @@ input {
 }
 
 button:not(.sidebar button) {
-    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    background: linear-gradient(45deg, #c5bbbb, #a5dbe9);
     color: white;
     border: none;
     padding: 18px 35px;
@@ -152,7 +152,7 @@ button:not(.sidebar button):hover {
     padding: 25px;
     background: rgba(255,255,255,0.9);
     border-radius: 20px;
-    border-left: 6px solid #ff6b6b;
+    border-left: 6px solid #6597da;
 }
 
 canvas {
@@ -190,18 +190,18 @@ canvas {
 
 .menu-toggle {
     position: fixed;
-    left: 20px;
+    left: 15px;
     top: 20px;
     z-index: 1001;
-    background: linear-gradient(45deg, #ff6b6b, #feca57);
-    color: white;
+    background: linear-gradient(45deg, #5f89d8, #b586d4);
+    color: rgb(0, 0, 0);
     border: none;
-    width: 60px;
+    width: 90px;
     height: 60px;
     border-radius: 50%;
     font-size: 1.5em;
     cursor: pointer;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
     transition: all 0.3s;
 }
 
@@ -217,7 +217,7 @@ canvas {
     top: 0;
     width: 250px;
     height: 100vh;
-    background: linear-gradient(180deg, #ff6b6b 0%, #feca57 50%, #48dbfb 100%);
+    background: linear-gradient(180deg, #6692d4 0%, #83c1e6 50%, #e5a0e5 100%);
     padding: 80px 20px 20px;
     z-index: 1000;
     box-shadow: 5px 0 20px rgba(0,0,0,0.3);
