@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento Rectilíneo Uniforme - MRU</title>
+    <link rel="stylesheet" href="css/mru.css">
+</head>
+<body>
+    <header>
+        <h1>🚗 Movimiento Rectilíneo Uniforme (MRU)</h1>
+        <nav>
+            <button onclick="irA('conceptos')">Conceptos</button>
+            <button onclick="irA('leyes')">Leyes</button>
+            <button onclick="irA('formulas')">Fórmulas</button>
+            <button onclick="irA('calculadora')">Calculadora</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="conceptos">
+            <h2>📚 Conceptos Fundamentales</h2>
+            <div class="concepto">
+                <h3>¿Qué es el MRU?</h3>
+                <p>El <strong>Movimiento Rectilíneo Uniforme (MRU)</strong> es cuando un objeto se mueve en <strong>línea recta</strong> con <strong>velocidad constante</strong>. Es decir:</p>
+                <ul>
+                    <li><strong>Rectilíneo:</strong> Trayectoria en línea recta (no curvas)</li>
+                    <li><strong>Uniforme:</strong> Velocidad NO cambia (ni acelera ni frena)</li>
+                    <li><strong>Aceleración = 0 m/s²</strong></li>
+                </ul>
+                <p><strong>Ejemplo:</strong> Un carro a 60 km/h en carretera recta sin acelerar ni frenar.</p>
+            </div>
+        </section>
+
+        <section id="leyes">
+            <h2>⚖️ Leyes de Newton que explican el MRU</h2>
+            <div class="ley">
+                <h3>1️⃣ <strong>Primera Ley (Inercia)</strong></h3>
+                <p>Un objeto en <strong>reposo</strong> permanece en reposo, y uno en <strong>movimiento rectilíneo uniforme</strong> continúa así, <strong>SI NO HAY FUERZAS</strong> que lo cambien.</p>
+                <p><em>Explicación larga:</em> Imagina un carro en hielo perfecto (sin fricción). Si lo empujas a 10 m/s, seguirá a 10 m/s para SIEMPRE en línea recta. Solo frenos/peso/aire lo detienen.</p>
+            </div>
+            <div class="ley">
+                <h3>2️⃣ <strong>Segunda Ley</strong></h3>
+                <p>F = m × a. En MRU, <strong>a = 0</strong> → <strong>Fneto = 0</strong>. Las fuerzas se equilibran perfectamente.</p>
+                <p><em>Ejemplo:</em> Carro a velocidad constante: motor = resistencia aire + fricción.</p>
+            </div>
+            <div class="ley">
+                <h3>3️⃣ <strong>Tercera Ley (Acción-Reacción)</strong></h3>
+                <p>No aplica directamente al MRU, pero explica por qué carro sigue recto (ruedas empujan suelo, suelo empuja ruedas).</p>
+            </div>
+        </section>
+
+        <section id="formulas">
+            <h2>🧮 Fórmulas del MRU</h2>
+            <div class="formula">
+                <h3>1. Velocidad: v = d / t</h3>
+                <p><strong>Lee:</strong> Velocidad = Distancia ÷ Tiempo</p>
+                <ul>
+                    <li>v = velocidad (m/s o km/h)</li>
+                    <li>d = distancia recorrida (m o km)</li>
+                    <li>t = tiempo (s o h)</li>
+                </ul>
+            </div>
+            <div class="formula">
+                <h3>2. Posición: x = x₀ + v × t</h3>
+                <p><strong>Lee:</strong> Posición final = Posición inicial + Velocidad × Tiempo</p>
+                <ul>
+                    <li>x = posición final</li>
+                    <li>x₀ = posición inicial</li>
+                    <li>v = velocidad constante</li>
+                    <li>t = tiempo transcurrido</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="calculadora">
+            <h2>🖥️ Calculadora Interactiva MRU</h2>
+            <div class="calc">
+                <input type="number" id="distancia" placeholder="Distancia (m)">
+                <input type="number" id="tiempo" placeholder="Tiempo (s)">
+                <input type="number" id="velocidad" placeholder="Velocidad (m/s)">
+                <input type="number" id="posInicial" placeholder="Posición inicial (m)">
+                <button onclick="calcularMRU()">Calcular ➕</button>
+                <div id="resultado"></div>
+            </div>
+            <canvas id="grafico" width="600" height="300"></canvas>
+        </section>
+    </main>
+
+    <script src="js/mru.js"></script>
+</body>
+</html>

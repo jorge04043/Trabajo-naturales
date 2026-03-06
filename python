@@ -1,0 +1,68 @@
+"""
+🚗 CALCULADORA MRU - Movimiento Rectilíneo Uniforme
+Resuelve TODOS los problemas automáticamente
+"""
+
+def mru_calculadora():
+    print("🚗 MOVIMIENTO RECTILÍNEO UNIFORME - CALCULADORA")
+    print("=" * 50)
+    
+    # Datos del problema
+    print("\n📝 Ingresa los datos CONOCIDOS (0 si no lo sabes):")
+    distancia = float(input("Distancia (m): ") or 0)
+    tiempo = float(input("Tiempo (s): ") or 0)
+    velocidad = float(input("Velocidad (m/s): ") or 0)
+    pos_inicial = float(input("Posición inicial (m): ") or 0)
+    
+    print("\n🔧 CALCULANDO...")
+    
+    resultados = {}
+    
+    # v = d/t
+    if distancia > 0 and tiempo > 0:
+        resultados['velocidad'] = distancia / tiempo
+        print(f"✅ Velocidad = Distancia/Tiempo = {distancia}/{tiempo} = {resultados['velocidad']:.2f} m/s")
+    
+    # d = v*t
+    if velocidad > 0 and tiempo > 0:
+        d_calculada = velocidad * tiempo
+        resultados['distancia'] = d_calculada
+        print(f"✅ Distancia = Velocidad*Tiempo = {velocidad}*{tiempo} = {d_calculada:.2f} m")
+    
+    # x = x0 + v*t
+    if velocidad > 0 and tiempo > 0:
+        pos_final = pos_inicial + velocidad * tiempo
+        resultados['posicion_final'] = pos_final
+        print(f"✅ Posición final = x₀ + v*t = {pos_inicial} + {velocidad}*{tiempo} = {pos_final:.2f} m")
+    
+    # t = d/v
+    if distancia > 0 and velocidad > 0:
+        t_calculado = distancia / velocidad
+        resultados['tiempo'] = t_calculado
+        print(f"✅ Tiempo = Distancia/Velocidad = {distancia}/{velocidad} = {t_calculado:.2f} s")
+    
+    print("\n🎯 RESULTADOS FINALES:")
+    for clave, valor in resultados.items():
+        print(f"   {clave.replace('_', ' ').title()}: {valor:.2f}")
+
+# Ejemplo automático
+def ejemplo_problema():
+    print("\n📖 EJEMPLO PRÁCTICO:")
+    print("Un carro viaja a 20 m/s por 30 segundos. ¿Cuánto recorre?")
+    
+    v = 20
+    t = 30
+    d = v * t
+    
+    print(f"Velocidad = {v} m/s")
+    print(f"Tiempo = {t} s")
+    print(f"Distancia = {v} * {t} = {d} metros")
+    print("¡El carro recorre 600 metros!")
+
+if __name__ == "__main__":
+    while True:
+        mru_calculadora()
+        ejemplo_problena()
+        continuar = input("\n¿Otro problema? (s/n): ").lower()
+        if continuar != 's':
+            break
