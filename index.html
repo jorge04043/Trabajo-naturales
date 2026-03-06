@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimiento Rectilíneo Uniforme - MRU</title>
-    <link rel="stylesheet" href="css/mru.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>🚗 Movimiento Rectilíneo Uniforme (MRU)</h1>
-        <nav>
-            <button onclick="irA('conceptos')">Conceptos</button>
-            <button onclick="irA('leyes')">Leyes</button>
-            <button onclick="irA('formulas')">Fórmulas</button>
-            <button onclick="irA('calculadora')">Calculadora</button>
-        </nav>
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="logo">📩 menu</div>
+        <button onclick="irA('conceptos')">📚 Conceptos</button>
+        <button onclick="irA('leyes')">⚖️ Leyes Newton</button>
+        <button onclick="irA('formulas')">🧮 Fórmulas</button>
+        <button onclick="irA('calculadora')">🖥️ Calculadora</button>
+    </nav>
+
+    <header class="header-main">
+        <h1>Movimiento Rectilíneo Uniforme</h1>
+        <p>Aprende MRU con explicaciones completas y calculadora interactiva</p>
     </header>
 
-    <main>
+    <main class="main-content">
         <section id="conceptos">
             <h2>📚 Conceptos Fundamentales</h2>
             <div class="concepto">
@@ -87,6 +94,6 @@
         </section>
     </main>
 
-    <script src="js/mru.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
