@@ -63,7 +63,7 @@ body {
 
 .header-main h1 {
     font-size: 3.5em;
-    color: white;
+    color: rgb(252, 252, 252);
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
     margin-bottom: 10px;
 }
